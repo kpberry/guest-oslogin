@@ -33,6 +33,7 @@ BuildRequires:  make
 BuildRequires:  libcurl-devel
 BuildRequires:  json-c-devel
 BuildRequires:  pam-devel
+BuildRequires:  pkg-config
 BuildRequires:  policycoreutils
 BuildRequires:  checkpolicy
 BuildRequires:  systemd

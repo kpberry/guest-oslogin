@@ -3,7 +3,7 @@ Maintainer: Google Cloud Team <gc-team@google.com>
 Section: misc
 Priority: optional
 Standards-Version: 3.9.8
-Build-Depends: debhelper (>= 9), libcurl4-openssl-dev, libjson-c-dev | libjson0-dev, libpam-dev
+Build-Depends: debhelper (>= 9), libcurl4-openssl-dev, libjson-c-dev | libjson0-dev, libpam-dev, pkg-config
 
 Package: google-compute-engine-oslogin
 Architecture: any

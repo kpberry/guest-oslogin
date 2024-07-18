@@ -1,7 +1,8 @@
 SHELL = /bin/sh
 TOPDIR = $(realpath ..)
 
-CPPFLAGS = -Iinclude -I/usr/include/json-c -I$(TOPDIR)/third_party/include
+PKG_CONFIG ?= /usr/bin/pkg-config
+CPPFLAGS = -Iinclude $(shell ${PKG_CONFIG} --cflags json-c) -I$(TOPDIR)/third_party/include
 FLAGS = -fPIC -Wall -g
 CFLAGS = $(FLAGS) -Wstrict-prototypes
 CXXFLAGS = $(FLAGS)
